@@ -7,7 +7,7 @@
       tag: "#{version}", revision: "6fe2d9b1f6e8fb7d500008e510a677fe299f7e9b"
   head "https://github.com/ProudOfZiggy/Binario.git"
 
-  depends_on "xcode": :build
+  depends_on xcode: [:build]
 
   def install
     system "make", "install"
